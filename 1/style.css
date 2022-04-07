@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--Bright-Red: hsl(12, 88%, 59%);
+	--Dark-Blue: hsl(228, 39%, 23%);
+	--Dark-Grayish-Blue: hsl(227, 12%, 61%);
+	--Very-Dark-Blue: hsl(233, 12%, 13%);
+	--Very-Pale-Red: hsl(13, 100%, 96%);
+}
+
+body {
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--Dark-Blue);
+}
+
+/* universla selectors */
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* utility class */
+
+.my {
+	margin: 2.5em 0;
+}
+
+/* .py {
+	padding: 1em 0;
+} */
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+.text-light {
+	opacity: 0.7;
+}
+
+.txt-very-light {
+	opacity: 0.6;
+}
+
+.btn-primary {
+	background-color: var(--Bright-Red);
+	border: none;
+	border-radius: 50px;
+	padding: 12px 30px;
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+	box-shadow: 1px 1px 1px 1px rgb(115, 137, 236);
+}
+
+.btn-secondary {
+	background-color: #fff;
+	border: none;
+	border-radius: 50px;
+	padding: 12px 30px;
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--Bright-Red);
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+}
+
+.btn-round {
+	background-color: var(--Bright-Red);
+	border: none;
+	border-radius: 50px;
+	padding: 10px 30px;
+	color: #fff;
+
+	transition: 200ms ease-in-out;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* hover css */
+
+.top-nav a:hover {
+	color: hsl(227, 12%, 61%);
+}
+
+.btn-primary:hover {
+	opacity: 0.5;
+}
+
+.btn-secondary:hover {
+	color: hsl(12, 50%, 77%);
+}
+
+.bottom-nav .btn-round:hover {
+	background-color: rgb(226, 143, 143);
+	cursor: pointer;
+}
+
+.fa-brands:hover,
+.bottom-nav a:hover {
+	color: rgb(223, 118, 118);
+	cursor: pointer;
+}
+
+/* hover css */
+
+/*utility clasess  */
+
+/* logo */
+
+.logo {
+	margin-top: 6px;
+}
+
+/* nav */
+
+.top-nav {
+	height: 100px;
+}
+.top-nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.top-nav ul {
+	display: flex;
+}
+
+.top-nav li {
+	font-weight: 700;
+	padding: 14px;
+}
+
+.top-nav a {
+	color: var(--Dark-Blue);
+	font-size: 14px;
+	transition: 200ms ease-in-out;
+}
+
+/* hero */
+
+.hero .container {
+	display: flex;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.hero .left-item h1 {
+	font-size: 40px;
+	font-weight: bold;
+	max-width: 40%;
+}
+
+.hero .left-item p {
+	font-size: 14px;
+	margin: 20px 0;
+	max-width: 35%;
+}
+
+/* .hero section img */
+.illustration-intro {
+	width: 50%;
+	margin-left: -45%;
+}
+
+/* .btn {
+	margin-top: 20px;
+} */
+
+/* promotion */
+.promotion .container {
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.promo-text {
+	max-width: 80%;
+}
+
+/* promotion list item*/
+.list-item {
+	position: relative;
+	margin-left: 20%;
+	padding: 10px 50px;
+}
+
+.inline-flex-item {
+	display: inline-flex;
+}
+
+.list-item h4 {
+	margin-top: 4px;
+	margin-left: 40px;
+}
+
+.list-item .no {
+	position: absolute;
+	left: -2%;
+}
+
+.list-item p {
+	font-size: 14px;
+	margin: 10px 40px;
+}
+
+/* promotion list item*/
+
+/* testimonials */
+
+.testimonials .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 50px;
+	margin-top: 30px;
+}
+
+/* testimonials */
+
+/* testimonials content */
+
+.testimonials-content p {
+	font-size: 14px;
+}
+
+.testimonials-content img {
+	width: 30%;
+}
+/* testimonials content */
+
+/* cta */
+.cta {
+	background-color: var(--Bright-Red);
+	color: #fff;
+	margin-top: 50px;
+}
+
+.cta .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 0;
+	height: 150px;
+}
+
+.cta h1 {
+	max-width: 80%;
+}
+
+/* cta */
+
+/* footer */
+footer {
+	padding: 50px 0;
+	background-color: var(--Very-Dark-Blue);
+	color: #fff;
+}
+
+.bottom-nav {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.bottom-nav li {
+	padding: 5px 0;
+}
+
+.bottom-nav a {
+	font-size: 13px;
+	color: #fff;
+}
+
+.flex-items {
+	margin-top: -4%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-items p {
+	font-size: 10px;
+}
+
+.icons {
+	flex: 1;
+}
+
+:focus {
+	outline: none;
+}
+
+input[type="text"] {
+	padding: 10px 30px;
+	border-radius: 50px;
+	border: none;
+}
+
+::placeholder {
+	font-size: 12px;
+	opacity: 0.6;
+}
+
+/* footer */
+
+/* icons */
+
+.fa-brands {
+	font-size: 20px;
+	margin: 0 5px;
+}
